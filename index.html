@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Burst</title>
+  <!-- tailwind and daisyUi -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- lato google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+  <style>
+    .font-lato{
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="font-lato">
+  <header>
+    <nav class="container mx-auto md:mt-5">
+      <div
+        class="navbar md:bg-[#F85559] rounded-full md:p-4 lg:p-6 md:text-white justify-around items-center mx-auto md:flex-row-reverse flex-row lg:flex-row">
+        <div class="navbar-start hidden md:flex">
+          <ul class="menu menu-horizontal px-1 text-base xl:text-lg font-normal ">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="navbar-center flex-row-reverse md:flex-row justify-around">
+          <div class="dropdown dropdown-bottom dropdown-end">
+            <label tabindex="0" class="btn btn-ghost md:hidden ">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100  rounded-box w-52 text-black">
+              <li><a>Item 1</a></li>
+              <li><a>Item 2</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-2xl md:text-3xl lg:text-4xl font-bold"><img class="w-10"
+              src="./images/logo.png" alt="">Fruit Burst</a>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+          <div class="form-control">
+            <div class="relative">
+              <input type="text" placeholder="Search here"
+                class="input rounded-full w-80  p-7 text-black font-medium text-xl" />
+              <div class="absolute top-0 right-0 p-4 text-black">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+</body>
+
+</html>
